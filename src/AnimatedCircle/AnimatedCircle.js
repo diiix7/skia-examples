@@ -8,6 +8,7 @@ import {
   withTiming,
 } from "react-native-reanimated";
 import { useEffect } from "react";
+import Header from "../Components/Header/Header.js";
 
 const AnimatedCircle = () => {
   const circleX = useSharedValue(50);
@@ -17,9 +18,12 @@ const AnimatedCircle = () => {
   }, [circleX]);
 
   return (
-    <Canvas style={AnimatedCircleStyle.canvas}>
-      <Circle cx={circleX} cy={100} r={50} color="blue" />
-    </Canvas>
+    <View>
+      <Header />
+      <Canvas style={AnimatedCircleStyle.canvas}>
+        <Circle cx={circleX} cy={100} r={50} color="blue" />
+      </Canvas>
+    </View>
   );
 };
 
