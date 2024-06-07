@@ -8,7 +8,7 @@ const Init = (props) => {
   const navigation = useNavigate();
 
   const handleAnimatedCircle = () => {
-    console.log("to animated circle...");
+    navigation("/animatedcircle");
   };
 
   return (
