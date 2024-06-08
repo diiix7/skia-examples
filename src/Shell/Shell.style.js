@@ -1,7 +1,7 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 const ShellStyle = StyleSheet.create({
-	view:{
-		flex:1
-	}
+  view: {
+    flex: 1,
+  },
 });
 export default ShellStyle;
